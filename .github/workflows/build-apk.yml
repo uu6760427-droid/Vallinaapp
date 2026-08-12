@@ -23,11 +23,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate package-lock.json if missing
-        run: npm install --package-lock-only
-
       - name: Install Capacitor CLI globally
         run: npm install -g @capacitor/cli
+
+      - name: Debug - show files
+        run: |
+          ls -la
+          ls -la www/
 
       - name: Add Android platform
         run: npx cap add android
