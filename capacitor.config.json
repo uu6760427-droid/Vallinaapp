@@ -1,0 +1,9 @@
+{
+  "appId": "com.example.vpnclient",
+  "appName": "VPN Client",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
