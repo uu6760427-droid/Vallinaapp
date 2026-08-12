@@ -6,7 +6,6 @@
     <title>VPN Client</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
-        /* все стили из предыдущего ответа, полностью */
         * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; }
         body { background:#0b0e1a; color:#f0f0f0; height:100vh; display:flex; justify-content:center; align-items:center; overflow:hidden; }
         .app { width:100%; max-width:420px; height:100vh; max-height:820px; background:linear-gradient(145deg,#12162a,#1a1f3a); border-radius:32px; box-shadow:0 20px 60px rgba(0,0,0,0.8); display:flex; flex-direction:column; position:relative; overflow:hidden; margin:0 16px; }
@@ -165,9 +164,6 @@
         loadData();
         // Если хочешь добавить примеры подписок, раскомментируй:
         // if (subscriptions.length === 0) { subscriptions.push('https://example.com/sub1', 'https://example.com/sub2'); saveData(); renderSubscriptions(); }
-        // Инициализация состояния кнопки
-        btnToggle.classList.remove('active');
-        document.querySelector('.btn-toggle .inner i').className = 'fas fa-power-off';
     </script>
 </body>
 </html>
