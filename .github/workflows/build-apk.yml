@@ -17,19 +17,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Install Capacitor CLI globally
         run: npm install -g @capacitor/cli
-
-      - name: Debug - show files
-        run: |
-          ls -la
-          ls -la www/
 
       - name: Add Android platform
         run: npx cap add android
@@ -50,7 +45,7 @@ jobs:
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
