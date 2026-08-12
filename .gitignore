@@ -1,0 +1,9 @@
+node_modules/
+android/
+.capacitor/
+.DS_Store
+*.log
+*.apk
+*.iml
+*.keystore
+local.properties
